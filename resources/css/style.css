@@ -1,0 +1,233 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+
+.main {
+  height: 30rem;
+  width: 100%;
+  background-image: url("../images/glasses-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 1rem;
+  width: 960px;
+  background-color: cadetblue;
+  height: 5rem;
+  margin: 0 auto;
+  color: white;
+}
+
+.header-logo {
+  display: block;
+  height: 1.5rem;
+  padding: 0 1.5rem 0 2rem;
+}
+
+.header nav {
+  position: absolute;
+  right: 0;
+  padding: 1rem;
+}
+
+.header nav ul li  {
+  display: inline-block;
+}
+
+.header nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  padding: 0 2rem;
+}
+
+.header .menu {
+  display: none;
+}
+
+.container {
+  margin: auto;
+  height: 5rem;
+  width: 960px;
+  position: relative;
+  top: 10rem;
+}
+
+.main-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 5rem;
+  width: 30rem;
+  float: right;
+  padding: 1.5rem 5rem;
+  position: relative;
+  left: 2rem;
+}
+
+.main-info span {
+  display: block;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 8rem;
+  width: 5rem;
+  margin: 3rem;
+}
+
+.pr-img1  {
+  height: 5rem;
+  width: 3.5rem;
+}
+
+.pr-img2 {
+ width: 5rem;
+ height : auto;
+}
+
+.pr-img3 {
+ width: 5rem;
+ height : auto;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+  width: 960px;
+  margin: 0 auto;
+}
+
+.info-container {
+  margin-right: 5%;
+  margin-bottom: 4rem;
+  width: 35%;
+}
+
+.title {
+  width: 10rem;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  color: white;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 960px;
+  height: 9.5rem;
+  background-color: azure;
+}
+
+.footer-logo {
+  display: block;
+  height: 1.5rem;
+  padding: 0 1rem 0 4rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .header {
+    width: 100%;
+  }
+  .header .navigation {
+    display: none;
+  }
+  .header .menu {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    right: 70%;
+  }
+  .header nav {
+    position: static;
+    margin: 0 auto;
+  }
+  .container {
+    width: 100%;
+  }
+  .main-info {
+    padding: 1rem 3rem;
+    height: 5rem;
+    width: 100%;
+  }
+  .main-info span {
+    font-size: 1.5rem;
+    margin: auto;
+  }
+  footer {
+    width: 100%;
+  }
+  footer span {
+    font-size: 0.9rem;
+  }
+  .product-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+  }
+    .information p {
+      font-size: 0.9rem;
+    }
+    .title {
+      font-size: 0.9rem;
+    }
+
+}
+@media only screen and (max-width: 720px) {
+  .main-info {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 3.5rem;
+  }
+  .main-info span {
+    padding: 0.7rem 1.5rem;
+    font-size: 1.3rem;
+  }
+  .information p {
+    font-size: 0.8rem;
+  }
+  .title {
+    font-size: 0.8rem;
+  }
+  footer span {
+    font-size: 0.8rem;
+  }
+}
